@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-orange-300">
+   <section class="py-4">
+    <header class="w-11/12 bg-white m-auto p-5  rounded-xl">
+        <nav class="flex justify-between">
+            <div id="dev-board" class="flex justify-center items-center gap-2">
+                <img class="w-full" src="./assets/logo.png" alt="">
+                <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <div id="dev-right" class="flex justify-center items-center gap-8">
+              <div>
+                <button id="back-btn" class="btn btn-dash btn-accent text-2xl p-6">Back To Desk </button>
+              </div>
+                
+            </div>
+        </nav>
+    </header>
+    <div id="answer-1" class="w-11/12 m-auto bg-gray-100 p-5 rounded-lg my-4">
+        <p class="text-2xl py-3 font-bold">Question-1: What are the different ways to select an element in the DOM?</p>
+        <p class="text-xl text-justify"><span class="font-semibold">Different Ways to Select Elements in the DOM .</span><br>
+
+            In JavaScript, there are multiple ways to select elements from the Document Object Model (DOM). Each method has its own advantages and use cases. Among them, my personal favorite and the most convenient one is getElementById(). However, there are several other methods as well.
+            
+            The getElementById(id) method selects a single element based on its unique id. This is one of the most efficient ways to access an element directly.
+            
+            The getElementsByClassName(className) method selects multiple elements that share the same class. It is useful when applying changes to a group of elements with a common class.
+            
+            The getElementsByTagName(tagName) method selects all elements of a specific tag type, such as div, p, or span. This is helpful when working with multiple elements of the same type.
+            
+            The querySelector(selector) method selects the first element that matches a given CSS selector. It allows for flexible selection using class names, IDs, or element types.
+            
+            The querySelectorAll(selector) method selects all elements that match a given CSS selector. It returns a NodeList, which</p>
+    </div>
+         
+    <div id="answer-1" class="w-11/12 m-auto bg-gray-100 p-5 rounded-lg my-4">
+        <p class="text-2xl py-3 font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+        <p class="text-xl text-justify">Using the innerHTML property, we can dynamically add or remove HTML tags. Through this, you can add a new "p" tag, and by clicking a button, you can either add or remove any HTML tag.
+
+            For example, by using innerHTML, you can add a new "p" tag and display it within the HTML document. Similarly, by clicking a button, you can remove or modify a specific HTML tag from the document.
+            
+            This provides a convenient way to dynamically change and control the content of an HTML document.</p>
+    </div>
+    <div id="answer-1" class="w-11/12 m-auto bg-gray-100 p-5 rounded-lg my-4">
+        <p class="text-2xl py-3 font-bold">Question-3: What is event delegation in the DOM?</p>
+        <p class="text-xl text-justify">Event delegation is a DOM technique that helps in dynamically controlling a website. It works by using event listeners, such as the event.target property, which is used to identify the element from which the event originated. Through this, you can easily manage events for multiple child elements by attaching a single event listener to a parent element.</p>
+    </div>
+    <div id="answer-1" class="w-11/12 m-auto bg-gray-100 p-5 rounded-lg my-4">
+        <p class="text-2xl py-3 font-bold">Question-4: What is event bubbling in the DOM?</p>
+        <p class="text-xl text-justify">If you click on a button, and the button is inside a parent element, the click event will first occur on the button, and then it will bubble up to the parent element, its parent, and even the entire document. You can add an event listener to the parent element using event bubbling.</p>
+    </div>
+    <div id="answer-1" class="w-11/12 m-auto bg-gray-100 p-5 rounded-lg my-4">
+        <p class="text-2xl py-3 font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+        <p class="text-xl text-justify">I usually create a new element using document.createElement() and then use document.appendChild() to add it to the DOM.</p>
+    </div>
+    </div>
+   </section>
+
+    <!-- script  -->
+     <script src="./script/back.js"></script>
+     <script src="./script/dynamic.js"></script>
+     <script src="./script/btn-work.js"></script>
+</body>
+</html>
