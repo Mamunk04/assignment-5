@@ -100,7 +100,7 @@ goggleLlcBtn.addEventListener("click" , function(){
     
 })
 
-// card 3
+// card 6
 const polygonTecBtn = document.getElementById("polygon-tec-btn");
 const polygonTecTitle = document.getElementById("polygon-tec-title").innerText;
 
@@ -115,6 +115,7 @@ polygonTecBtn.addEventListener("click" , function(){
         newText.innerText = "You have complete the task " + pHeroTitle + time;
         activityHistory.appendChild(newText).classList.add("text-2xl", "bg-gray-100","p-2","rounded-lg","my-2");
         alert("You have completed "+ polygonTecTitle)
+        alert("You have completed successfully ")
     
 })
 
